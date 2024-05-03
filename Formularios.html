@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formularios</title>
+    </head>
+    <body>
+        <h1>Formulários</h1>
+        <form>
+            
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" placeholder="Nome" id="nome"/>
+            </p>
+            <p>
+                <label for="login">Email:</label>
+                <input type="email" placeholder="email@exemplo.com" id="login"/>
+            </p>
+
+            <p>
+                <label for="numero">Telefone:</label>
+                <input type="text" placeholder="(xx) 1234-5678" id="numero">
+            </p>
+
+            <p>
+                1. O que acha do nosso produto?
+                <input type="radio" id="satisfação-1" name="satisfação"/>
+                <label for="satisfação-1">Muito Ruim</label>
+
+                <input type="radio" id="satisfação-2" name="satisfação"/>
+                <label for="satisfação-2">Ruim</label>
+
+                <input type="radio" id="satisfação-3" name="satisfação"/>
+                <label for="satisfação-3">Mais ou menos</label>
+
+                <input type="radio" id="satisfação-4" name="satisfação"/>
+                <label for="satisfação-4">Bom</label>
+
+                <input type="radio" id="satisfação-5" name="satisfação"/>
+                <label for="satisfação-5">Excelente</label>
+            </p>
+
+            <p>
+                2. Recomendaria para alguém?
+                <input type="radio" id="recomendação-1" name="recomendação"/>
+                <label for="recomendação-1">Sim</label>
+
+                <input type="radio" id="recomendação-2" name="recomendação"/>
+                <label for="recomendação-2">Não</label>
+            </p>
+
+            <p>
+                3. Por qual meio você ficou sabendo do nosso produto?
+                <select>
+                    <option>Mercado Livre</option>
+                    <option>Instagram</option>
+                    <option>Facebook</option>
+                    <option>Panfletos</option>
+                    <option>Amigos e/ou familiares</option>
+                    <option>Shopee</option>
+                </select>
+            </p>
+
+            <p>
+                <input type="checkbox" id="termos"/>
+                <label for="termos">Autorizo compartilhar minha resposta com terceiros.</label>
+            </p>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </body>
+</html>
