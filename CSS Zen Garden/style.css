@@ -1,7 +1,28 @@
-/* Paleta de cor #730710, #27F2DE, #37A67D, #090D0C, #082618 */
+/* Paleta de cor #011b0f, #ffffff, #02d837*/
 html{
+    text-indent: 1em;
     color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
 }
+
 body{
     background: #011b0f;
+}
+
+h1, h2, h3{text-align: center;}
+h1{font-size: 1.8em;}
+h2{font-size: 1.4em;}
+h3{font-size: 1.2em;}
+
+.summary{
+    text-align: center;
+}
+
+.main p{
+    line-height: 1.5;
+}
+
+abbr{
+    font-variant: small-caps;
 }
