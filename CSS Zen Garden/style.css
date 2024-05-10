@@ -89,13 +89,13 @@ aside ul li{
 .explanation{
     width: 60%;
     margin-right: 35%;
-    border-right: solid 1px #1f295c;
+    border-right: solid 1px #011b0f;
     padding-right: 2%;
 }
 
 #design-selection{
     position: absolute;
-    top: 530px;
+    top: 430px;
     left: 56%;
     padding-right: 1%;
     padding-left: 1%;
@@ -103,8 +103,8 @@ aside ul li{
 
 .benefits{
     display: flex;
-    border-top: solid 1px;
-    border-bottom: solid 1px;
+    border-top: solid 1px #011b0f;
+    border-bottom: solid 1px #011b0f;
 }
 
 .benefits h3{
@@ -130,4 +130,69 @@ aside ul li{
 
 .participation p{
     flex-basis: 50%;
+}
+
+a{
+    color: #02d837;
+    font-weight: bold;
+}
+
+a:hover{
+    color:#011b0f;
+}
+
+a:visited{
+    font-weight: 400;
+}
+
+.main p:first-of-type:first-letter{
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    float: left;
+}
+
+.design-selection li{
+    border-top: solid 1px#011b0f;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.design-selection li:last-child{
+    border-bottom: solid 1px#011b0f;
+}
+
+@media screen and (max-width: 768px) {
+    #design-selection{
+        position: static;
+        width: 100%;
+    }
+
+    .explanation{
+        border-right: none;
+        width: 100%;
+    }
+
+    .participation{
+        flex-direction: column;
+    }
+
+    #zen-intro{
+        height: auto;
+    }
+
+    html{
+        text-indent: 0;
+    }
+    
+}
+
+@media print{
+    html{
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    #zen-intro header{
+        background-color: #fbfcfd;
+        color: #011b0f;
+    }
 }
