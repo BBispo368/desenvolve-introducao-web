@@ -1,0 +1,211 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+body{
+    margin: 0;
+}
+
+h1,h2,h3{
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+#menu{
+    background-color: rgb(14, 108, 50);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px;
+    margin-top: 0;
+}
+
+#menu li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+#menu a{
+    color: white;
+    text-decoration: none;
+}
+
+#menu a:hover{
+    color: rgb(28, 216, 100)
+}
+
+
+#info{
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#info p, h1{
+    width: 75%;
+}
+
+#info div{
+    width: 50%;
+}
+
+img{
+    right: 20px;
+    top: 100px;
+    position: absolute;
+    width: 20%;
+    max-height: 190px;
+    max-width: 200px;
+}
+
+footer{
+    background-color:rgb(4, 27, 12) ;
+}
+.main{
+    padding: 0px 20px;
+}
+
+h2{
+    text-align: center;
+    background-color: rgb(7, 54, 25);
+    color: white;
+    padding: 10px;
+}
+
+h3{
+    margin-bottom: 0;
+}
+
+.experiencia{
+    padding: 10px
+}
+
+p{
+    text-align: justify;
+}
+
+#certificações-main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.certificações{
+    flex-basis: 50%;
+    margin-bottom: 10px;
+}
+
+#escolaridade-main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.escolaridade{
+    flex-basis: 50%;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+#habilidades-main{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+#habilidades-main li{
+    flex-basis: 32%;
+    margin-bottom: 10px;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    font-size: 0.8em;
+    }
+
+footer a:hover{
+    color: rgb(236, 236, 236);
+}
+
+
+#links-main{
+    list-style-type: none;
+    padding-top: 15px;
+    text-align: center;
+}
+
+#copyright{
+    font-size: 0.5em;
+    color: rgb(128, 128, 128);
+    text-align: right;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 768px){
+
+    img{
+            position: static;
+            padding: 0 30%;
+            width: 40%;
+            min-width: 190px;
+            min-height: 200px;
+            max-width: none;
+            max-height: none;
+    }
+
+    h2{
+        font-size: 2em;
+        margin-bottom: 80px;
+    }
+
+    h1{
+            font-size: 2.5em;
+            width: 100%;
+            text-align: center;
+    }
+
+    .main{
+            flex-direction: column;
+    }
+
+    #info{
+        margin-top: 130px;
+    }
+
+    #info p{
+            width: 100%;
+    }
+
+    #menu{
+            flex-direction: column;
+            text-align: center;
+    }
+
+    #menu li{
+            padding: 5px;
+    }
+
+    #habilidades-main li{
+            padding: 10px;
+            margin: 0;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    }
+
+    #habilidades-main li:last-of-type{
+            border-bottom: 0;
+            margin-bottom: 80px;
+    }
+}
